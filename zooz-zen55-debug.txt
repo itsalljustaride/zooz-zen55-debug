@@ -1,0 +1,2162 @@
+{
+  "id": 2,
+  "name": "Zooz DC Relay",
+  "loc": "Farmhouse Basement",
+  "values": [
+    {
+      "id": "2-112-0-1",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 112,
+      "commandClassName": "Configuration",
+      "endpoint": 0,
+      "property": 1,
+      "propertyName": "LED Indicator",
+      "type": "number",
+      "readable": true,
+      "writeable": true,
+      "label": "LED Indicator",
+      "default": 1,
+      "stateless": false,
+      "commandClassVersion": 4,
+      "min": 0,
+      "max": 1,
+      "allowed": [
+        {
+          "from": 0,
+          "to": 1
+        }
+      ],
+      "list": true,
+      "allowManualEntry": false,
+      "states": [
+        {
+          "text": "Disable",
+          "value": 0
+        },
+        {
+          "text": "Enable",
+          "value": 1
+        }
+      ],
+      "value": 1,
+      "lastUpdate": 1787946815713,
+      "newValue": 1
+    },
+    {
+      "id": "2-112-0-2",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 112,
+      "commandClassName": "Configuration",
+      "endpoint": 0,
+      "property": 2,
+      "propertyName": "Turn On Relay On Alarm",
+      "type": "number",
+      "readable": true,
+      "writeable": true,
+      "label": "Turn On Relay On Alarm",
+      "default": 1,
+      "stateless": false,
+      "commandClassVersion": 4,
+      "min": 0,
+      "max": 3,
+      "allowed": [
+        {
+          "from": 0,
+          "to": 3
+        }
+      ],
+      "list": true,
+      "allowManualEntry": false,
+      "states": [
+        {
+          "text": "Disable",
+          "value": 0
+        },
+        {
+          "text": "Smoke and CO notifications",
+          "value": 1
+        },
+        {
+          "text": "Smoke notification only",
+          "value": 2
+        },
+        {
+          "text": "CO notification only",
+          "value": 3
+        }
+      ],
+      "value": 1,
+      "lastUpdate": 1787946815766,
+      "newValue": 1
+    },
+    {
+      "id": "2-112-0-3",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 112,
+      "commandClassName": "Configuration",
+      "endpoint": 0,
+      "property": 3,
+      "propertyName": "Auto Turn-Off Timer",
+      "type": "number",
+      "readable": true,
+      "writeable": true,
+      "label": "Auto Turn-Off Timer",
+      "default": 0,
+      "stateless": false,
+      "commandClassVersion": 4,
+      "min": 0,
+      "max": 4294967295,
+      "allowed": [
+        {
+          "from": 0,
+          "to": 4294967295
+        }
+      ],
+      "unit": "seconds",
+      "list": true,
+      "allowManualEntry": true,
+      "states": [
+        {
+          "text": "Disable",
+          "value": 0
+        }
+      ],
+      "value": 0,
+      "lastUpdate": 1787946815822,
+      "newValue": 0
+    },
+    {
+      "id": "2-112-0-4",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 112,
+      "commandClassName": "Configuration",
+      "endpoint": 0,
+      "property": 4,
+      "propertyName": "Auto Turn-On Timer",
+      "type": "number",
+      "readable": true,
+      "writeable": true,
+      "label": "Auto Turn-On Timer",
+      "default": 0,
+      "stateless": false,
+      "commandClassVersion": 4,
+      "min": 0,
+      "max": 4294967295,
+      "allowed": [
+        {
+          "from": 0,
+          "to": 4294967295
+        }
+      ],
+      "unit": "seconds",
+      "list": true,
+      "allowManualEntry": true,
+      "states": [
+        {
+          "text": "Disable",
+          "value": 0
+        }
+      ],
+      "value": 0,
+      "lastUpdate": 1787946815884,
+      "newValue": 0
+    },
+    {
+      "id": "2-112-0-5",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 112,
+      "commandClassName": "Configuration",
+      "endpoint": 0,
+      "property": 5,
+      "propertyName": "State After Power Failure",
+      "type": "number",
+      "readable": true,
+      "writeable": true,
+      "label": "State After Power Failure",
+      "default": 2,
+      "stateless": false,
+      "commandClassVersion": 4,
+      "min": 0,
+      "max": 2,
+      "allowed": [
+        {
+          "from": 0,
+          "to": 2
+        }
+      ],
+      "list": true,
+      "allowManualEntry": false,
+      "states": [
+        {
+          "text": "Always off",
+          "value": 0
+        },
+        {
+          "text": "Always on",
+          "value": 1
+        },
+        {
+          "text": "Previous state",
+          "value": 2
+        }
+      ],
+      "value": 2,
+      "lastUpdate": 1787946815938,
+      "newValue": 2
+    },
+    {
+      "id": "2-112-0-6",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 112,
+      "commandClassName": "Configuration",
+      "endpoint": 0,
+      "property": 6,
+      "propertyName": "Group 2 (Smoke Alarm): Basic Set Configuration",
+      "type": "number",
+      "readable": true,
+      "writeable": true,
+      "label": "Group 2 (Smoke Alarm): Basic Set Configuration",
+      "default": 0,
+      "stateless": false,
+      "commandClassVersion": 4,
+      "min": 0,
+      "max": 5,
+      "allowed": [
+        {
+          "from": 0,
+          "to": 5
+        }
+      ],
+      "list": true,
+      "allowManualEntry": false,
+      "states": [
+        {
+          "text": "Smoke detected: 0xff (On); No smoke: 0x00 (Off)",
+          "value": 0
+        },
+        {
+          "text": "Smoke detected: 0x00 (Off); No smoke: 0xff (On)",
+          "value": 1
+        },
+        {
+          "text": "Smoke detected: 0xff (On); No smoke: No command",
+          "value": 2
+        },
+        {
+          "text": "Smoke detected: 0x00 (Off); No smoke: No command",
+          "value": 3
+        },
+        {
+          "text": "Smoke detected: No command; No smoke: 0x00 (Off)",
+          "value": 4
+        },
+        {
+          "text": "Smoke detected: No command; No smoke: 0xff (On)",
+          "value": 5
+        }
+      ],
+      "value": 0,
+      "lastUpdate": 1787946815991,
+      "newValue": 0
+    },
+    {
+      "id": "2-112-0-7",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 112,
+      "commandClassName": "Configuration",
+      "endpoint": 0,
+      "property": 7,
+      "propertyName": "Group 3 (CO Alarm): Basic Set Configuration",
+      "type": "number",
+      "readable": true,
+      "writeable": true,
+      "label": "Group 3 (CO Alarm): Basic Set Configuration",
+      "default": 0,
+      "stateless": false,
+      "commandClassVersion": 4,
+      "min": 0,
+      "max": 5,
+      "allowed": [
+        {
+          "from": 0,
+          "to": 5
+        }
+      ],
+      "list": true,
+      "allowManualEntry": false,
+      "states": [
+        {
+          "text": "CO detected: 0xff (On); No CO: 0x00 (Off)",
+          "value": 0
+        },
+        {
+          "text": "CO detected: 0x00 (Off); No CO: 0xff (On)",
+          "value": 1
+        },
+        {
+          "text": "CO detected: 0xff (On); No CO: No command",
+          "value": 2
+        },
+        {
+          "text": "CO detected: 0x00 (Off); No CO: No command",
+          "value": 3
+        },
+        {
+          "text": "CO detected: No command; No CO: 0x00 (Off)",
+          "value": 4
+        },
+        {
+          "text": "CO detected: No command; No CO: 0xff (On)",
+          "value": 5
+        }
+      ],
+      "value": 0,
+      "lastUpdate": 1787946816046,
+      "newValue": 0
+    },
+    {
+      "id": "2-112-0-8",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 112,
+      "commandClassName": "Configuration",
+      "endpoint": 0,
+      "property": 8,
+      "propertyName": "Enabled Features",
+      "type": "number",
+      "readable": true,
+      "writeable": true,
+      "description": "After changing this parameter, the device must be excluded and re-included",
+      "label": "Enabled Features",
+      "default": 1,
+      "stateless": false,
+      "commandClassVersion": 4,
+      "min": 1,
+      "max": 7,
+      "allowed": [
+        {
+          "from": 1,
+          "to": 7
+        }
+      ],
+      "list": true,
+      "allowManualEntry": false,
+      "states": [
+        {
+          "text": "Smoke & CO sensor",
+          "value": 1
+        },
+        {
+          "text": "CO sensor",
+          "value": 2
+        },
+        {
+          "text": "Smoke sensor",
+          "value": 3
+        },
+        {
+          "text": "Relay, smoke & CO sensor",
+          "value": 4
+        },
+        {
+          "text": "Relay & CO sensor",
+          "value": 5
+        },
+        {
+          "text": "Relay & smoke sensor",
+          "value": 6
+        },
+        {
+          "text": "Relay",
+          "value": 7
+        }
+      ],
+      "value": 4,
+      "lastUpdate": 1787946816101,
+      "newValue": 4
+    },
+    {
+      "id": "2-112-0-9",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 112,
+      "commandClassName": "Configuration",
+      "endpoint": 0,
+      "property": 9,
+      "propertyName": "Relay Report Type",
+      "type": "number",
+      "readable": true,
+      "writeable": true,
+      "label": "Relay Report Type",
+      "default": 0,
+      "stateless": false,
+      "commandClassVersion": 4,
+      "min": 0,
+      "max": 2,
+      "allowed": [
+        {
+          "from": 0,
+          "to": 2
+        }
+      ],
+      "list": true,
+      "allowManualEntry": false,
+      "states": [
+        {
+          "text": "Binary Switch reports for Z-Wave and sensor control",
+          "value": 0
+        },
+        {
+          "text": "Binary Switch reports for Z-Wave control; Basic reports for sensor control",
+          "value": 1
+        },
+        {
+          "text": "Basic reports for Z-Wave and sensor control",
+          "value": 2
+        }
+      ],
+      "value": 0,
+      "lastUpdate": 1787946816155,
+      "newValue": 0
+    },
+    {
+      "id": "2-113-0-Smoke Alarm-Sensor status",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 113,
+      "commandClassName": "Notification",
+      "endpoint": 0,
+      "property": "Smoke Alarm",
+      "propertyName": "Smoke Alarm",
+      "propertyKey": "Sensor status",
+      "propertyKeyName": "Sensor status",
+      "type": "number",
+      "readable": true,
+      "writeable": false,
+      "label": "Sensor status",
+      "ccSpecific": {
+        "notificationType": 1
+      },
+      "stateless": false,
+      "commandClassVersion": 8,
+      "min": 0,
+      "max": 255,
+      "list": true,
+      "states": [
+        {
+          "text": "idle",
+          "value": 0
+        },
+        {
+          "text": "Smoke detected",
+          "value": 2
+        }
+      ],
+      "value": 0,
+      "newValue": 0
+    },
+    {
+      "id": "2-113-0-CO Alarm-Sensor status",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 113,
+      "commandClassName": "Notification",
+      "endpoint": 0,
+      "property": "CO Alarm",
+      "propertyName": "CO Alarm",
+      "propertyKey": "Sensor status",
+      "propertyKeyName": "Sensor status",
+      "type": "number",
+      "readable": true,
+      "writeable": false,
+      "label": "Sensor status",
+      "ccSpecific": {
+        "notificationType": 2
+      },
+      "stateless": false,
+      "commandClassVersion": 8,
+      "min": 0,
+      "max": 255,
+      "list": true,
+      "states": [
+        {
+          "text": "idle",
+          "value": 0
+        },
+        {
+          "text": "Carbon monoxide detected",
+          "value": 2
+        }
+      ],
+      "value": 0,
+      "newValue": 0
+    },
+    {
+      "id": "2-113-0-alarmType",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 113,
+      "commandClassName": "Notification",
+      "endpoint": 0,
+      "property": "alarmType",
+      "propertyName": "alarmType",
+      "type": "number",
+      "readable": true,
+      "writeable": false,
+      "label": "Alarm Type",
+      "stateless": false,
+      "commandClassVersion": 8,
+      "min": 0,
+      "max": 255,
+      "list": false,
+      "value": 0,
+      "newValue": 0
+    },
+    {
+      "id": "2-113-0-alarmLevel",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 113,
+      "commandClassName": "Notification",
+      "endpoint": 0,
+      "property": "alarmLevel",
+      "propertyName": "alarmLevel",
+      "type": "number",
+      "readable": true,
+      "writeable": false,
+      "label": "Alarm Level",
+      "stateless": false,
+      "commandClassVersion": 8,
+      "min": 0,
+      "max": 255,
+      "list": false,
+      "value": 0,
+      "newValue": 0
+    },
+    {
+      "id": "2-114-0-productId",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 114,
+      "commandClassName": "Manufacturer Specific",
+      "endpoint": 0,
+      "property": "productId",
+      "propertyName": "productId",
+      "type": "number",
+      "readable": true,
+      "writeable": false,
+      "label": "Product ID",
+      "stateless": false,
+      "commandClassVersion": 2,
+      "min": 0,
+      "max": 65535,
+      "list": false,
+      "value": 272,
+      "newValue": 272
+    },
+    {
+      "id": "2-114-0-productType",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 114,
+      "commandClassName": "Manufacturer Specific",
+      "endpoint": 0,
+      "property": "productType",
+      "propertyName": "productType",
+      "type": "number",
+      "readable": true,
+      "writeable": false,
+      "label": "Product type",
+      "stateless": false,
+      "commandClassVersion": 2,
+      "min": 0,
+      "max": 65535,
+      "list": false,
+      "value": 4,
+      "newValue": 4
+    },
+    {
+      "id": "2-114-0-manufacturerId",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 114,
+      "commandClassName": "Manufacturer Specific",
+      "endpoint": 0,
+      "property": "manufacturerId",
+      "propertyName": "manufacturerId",
+      "type": "number",
+      "readable": true,
+      "writeable": false,
+      "label": "Manufacturer ID",
+      "stateless": false,
+      "commandClassVersion": 2,
+      "min": 0,
+      "max": 65535,
+      "list": false,
+      "value": 634,
+      "newValue": 634
+    },
+    {
+      "id": "2-134-0-hardwareVersion",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 134,
+      "commandClassName": "Version",
+      "endpoint": 0,
+      "property": "hardwareVersion",
+      "propertyName": "hardwareVersion",
+      "type": "number",
+      "readable": true,
+      "writeable": false,
+      "label": "Z-Wave chip hardware version",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": false,
+      "value": 1,
+      "newValue": 1
+    },
+    {
+      "id": "2-134-0-firmwareVersions",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 134,
+      "commandClassName": "Version",
+      "endpoint": 0,
+      "property": "firmwareVersions",
+      "propertyName": "firmwareVersions",
+      "type": "string[]",
+      "readable": true,
+      "writeable": false,
+      "label": "Z-Wave chip firmware versions",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": false,
+      "value": [
+        "1.50"
+      ],
+      "lastUpdate": 1787946812832,
+      "newValue": [
+        "1.50"
+      ]
+    },
+    {
+      "id": "2-134-0-protocolVersion",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 134,
+      "commandClassName": "Version",
+      "endpoint": 0,
+      "property": "protocolVersion",
+      "propertyName": "protocolVersion",
+      "type": "string",
+      "readable": true,
+      "writeable": false,
+      "label": "Z-Wave protocol version",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": false,
+      "value": "7.18",
+      "newValue": "7.18"
+    },
+    {
+      "id": "2-134-0-libraryType",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 134,
+      "commandClassName": "Version",
+      "endpoint": 0,
+      "property": "libraryType",
+      "propertyName": "libraryType",
+      "type": "number",
+      "readable": true,
+      "writeable": false,
+      "label": "Library type",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": true,
+      "states": [
+        {
+          "text": "Unknown",
+          "value": 0
+        },
+        {
+          "text": "Static Controller",
+          "value": 1
+        },
+        {
+          "text": "Controller",
+          "value": 2
+        },
+        {
+          "text": "Enhanced Slave",
+          "value": 3
+        },
+        {
+          "text": "Slave",
+          "value": 4
+        },
+        {
+          "text": "Installer",
+          "value": 5
+        },
+        {
+          "text": "Routing Slave",
+          "value": 6
+        },
+        {
+          "text": "Bridge Controller",
+          "value": 7
+        },
+        {
+          "text": "Device under Test",
+          "value": 8
+        },
+        {
+          "text": "N/A",
+          "value": 9
+        },
+        {
+          "text": "AV Remote",
+          "value": 10
+        },
+        {
+          "text": "AV Device",
+          "value": 11
+        }
+      ],
+      "value": 3,
+      "newValue": 3
+    },
+    {
+      "id": "2-134-0-applicationBuildNumber",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 134,
+      "commandClassName": "Version",
+      "endpoint": 0,
+      "property": "applicationBuildNumber",
+      "propertyName": "applicationBuildNumber",
+      "type": "string",
+      "readable": true,
+      "writeable": false,
+      "label": "Application build number",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": false,
+      "value": 437,
+      "newValue": 437
+    },
+    {
+      "id": "2-134-0-applicationVersion",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 134,
+      "commandClassName": "Version",
+      "endpoint": 0,
+      "property": "applicationVersion",
+      "propertyName": "applicationVersion",
+      "type": "string",
+      "readable": true,
+      "writeable": false,
+      "label": "Application version",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": false,
+      "value": "1.50.0",
+      "newValue": "1.50.0"
+    },
+    {
+      "id": "2-134-0-zWaveProtocolBuildNumber",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 134,
+      "commandClassName": "Version",
+      "endpoint": 0,
+      "property": "zWaveProtocolBuildNumber",
+      "propertyName": "zWaveProtocolBuildNumber",
+      "type": "string",
+      "readable": true,
+      "writeable": false,
+      "label": "Z-Wave protocol build number",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": false,
+      "value": 437,
+      "newValue": 437
+    },
+    {
+      "id": "2-134-0-zWaveProtocolVersion",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 134,
+      "commandClassName": "Version",
+      "endpoint": 0,
+      "property": "zWaveProtocolVersion",
+      "propertyName": "zWaveProtocolVersion",
+      "type": "string",
+      "readable": true,
+      "writeable": false,
+      "label": "Z-Wave protocol version",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": false,
+      "value": "7.18.8",
+      "newValue": "7.18.8"
+    },
+    {
+      "id": "2-134-0-hostInterfaceBuildNumber",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 134,
+      "commandClassName": "Version",
+      "endpoint": 0,
+      "property": "hostInterfaceBuildNumber",
+      "propertyName": "hostInterfaceBuildNumber",
+      "type": "string",
+      "readable": true,
+      "writeable": false,
+      "label": "Serial API build number",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": false,
+      "value": 0,
+      "newValue": 0
+    },
+    {
+      "id": "2-134-0-hostInterfaceVersion",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 134,
+      "commandClassName": "Version",
+      "endpoint": 0,
+      "property": "hostInterfaceVersion",
+      "propertyName": "hostInterfaceVersion",
+      "type": "string",
+      "readable": true,
+      "writeable": false,
+      "label": "Serial API version",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": false,
+      "value": "unused",
+      "newValue": "unused"
+    },
+    {
+      "id": "2-134-0-applicationFrameworkBuildNumber",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 134,
+      "commandClassName": "Version",
+      "endpoint": 0,
+      "property": "applicationFrameworkBuildNumber",
+      "propertyName": "applicationFrameworkBuildNumber",
+      "type": "string",
+      "readable": true,
+      "writeable": false,
+      "label": "Z-Wave application framework API build number",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": false,
+      "value": 437,
+      "newValue": 437
+    },
+    {
+      "id": "2-134-0-applicationFrameworkAPIVersion",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 134,
+      "commandClassName": "Version",
+      "endpoint": 0,
+      "property": "applicationFrameworkAPIVersion",
+      "propertyName": "applicationFrameworkAPIVersion",
+      "type": "string",
+      "readable": true,
+      "writeable": false,
+      "label": "Z-Wave application framework API version",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": false,
+      "value": "10.18.8",
+      "newValue": "10.18.8"
+    },
+    {
+      "id": "2-134-0-sdkVersion",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 134,
+      "commandClassName": "Version",
+      "endpoint": 0,
+      "property": "sdkVersion",
+      "propertyName": "sdkVersion",
+      "type": "string",
+      "readable": true,
+      "writeable": false,
+      "label": "SDK version",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": false,
+      "value": "7.18.8",
+      "newValue": "7.18.8"
+    },
+    {
+      "id": "2-135-0-value",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 135,
+      "commandClassName": "Indicator",
+      "endpoint": 0,
+      "property": "value",
+      "propertyName": "value",
+      "type": "number",
+      "readable": true,
+      "writeable": true,
+      "label": "Indicator value",
+      "ccSpecific": {
+        "indicatorId": 0
+      },
+      "stateless": false,
+      "commandClassVersion": 3,
+      "min": 0,
+      "max": 255,
+      "list": false,
+      "lastUpdate": 1787946816742
+    },
+    {
+      "id": "2-135-0-identify",
+      "nodeId": 2,
+      "toUpdate": false,
+      "commandClass": 135,
+      "commandClassName": "Indicator",
+      "endpoint": 0,
+      "property": "identify",
+      "propertyName": "identify",
+      "type": "boolean",
+      "readable": false,
+      "writeable": true,
+      "label": "Identify",
+      "stateless": false,
+      "commandClassVersion": 3,
+      "list": true,
+      "states": [
+        {
+          "text": "Identify",
+          "value": true
+        }
+      ],
+      "lastUpdate": 1787946816744
+    }
+  ],
+  "groups": [
+    {
+      "title": "Lifeline",
+      "endpoint": 0,
+      "value": 1,
+      "maxNodes": 5,
+      "isLifeline": true,
+      "multiChannel": true
+    },
+    {
+      "title": "Smoke Alarm",
+      "endpoint": 0,
+      "value": 2,
+      "maxNodes": 5,
+      "isLifeline": false,
+      "multiChannel": true
+    },
+    {
+      "title": "CO Alarm",
+      "endpoint": 0,
+      "value": 3,
+      "maxNodes": 5,
+      "isLifeline": false,
+      "multiChannel": true
+    }
+  ],
+  "neighbors": [],
+  "ready": true,
+  "available": true,
+  "hassDevices": {},
+  "failed": false,
+  "inited": true,
+  "eventsQueue": [
+    {
+      "time": "2026-08-28T19:38:38.050Z",
+      "event": "alive",
+      "args": [
+        0
+      ]
+    },
+    {
+      "time": "2026-08-28T19:38:38.127Z",
+      "event": "ready",
+      "args": []
+    },
+    {
+      "time": "2026-08-28T19:39:37.397Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Node Naming and Location",
+          "commandClass": 119,
+          "property": "name",
+          "newValue": "Zooz DC Relay",
+          "propertyName": "name"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:37.403Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Node Naming and Location",
+          "commandClass": 119,
+          "property": "location",
+          "newValue": "Farmhouse Basement",
+          "propertyName": "location"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:37.417Z",
+      "event": "interview started",
+      "args": []
+    },
+    {
+      "time": "2026-08-28T19:39:37.461Z",
+      "event": "interview stage completed",
+      "args": [
+        "ProtocolInfo"
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:37.510Z",
+      "event": "alive",
+      "args": [
+        0
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:37.578Z",
+      "event": "interview stage completed",
+      "args": [
+        "NodeInfo"
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:38.135Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Manufacturer Specific",
+          "commandClass": 114,
+          "endpoint": 0,
+          "property": "productId",
+          "newValue": 272,
+          "propertyName": "productId"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:38.148Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Manufacturer Specific",
+          "commandClass": 114,
+          "endpoint": 0,
+          "property": "productType",
+          "newValue": 4,
+          "propertyName": "productType"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:38.162Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Manufacturer Specific",
+          "commandClass": 114,
+          "endpoint": 0,
+          "property": "manufacturerId",
+          "newValue": 634,
+          "propertyName": "manufacturerId"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:38.338Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "hardwareVersion",
+          "newValue": 1,
+          "propertyName": "hardwareVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:38.353Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "firmwareVersions",
+          "newValue": [
+            "1.50"
+          ],
+          "propertyName": "firmwareVersions"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:38.369Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "protocolVersion",
+          "newValue": "7.18",
+          "propertyName": "protocolVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:38.386Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "libraryType",
+          "newValue": 3,
+          "propertyName": "libraryType"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:39.516Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "applicationBuildNumber",
+          "newValue": 437,
+          "propertyName": "applicationBuildNumber"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:39.526Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "applicationVersion",
+          "newValue": "1.50.0",
+          "propertyName": "applicationVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:39.535Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "zWaveProtocolBuildNumber",
+          "newValue": 437,
+          "propertyName": "zWaveProtocolBuildNumber"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:39.544Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "zWaveProtocolVersion",
+          "newValue": "7.18.8",
+          "propertyName": "zWaveProtocolVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:39.554Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "hostInterfaceBuildNumber",
+          "newValue": 0,
+          "propertyName": "hostInterfaceBuildNumber"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:39.570Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "hostInterfaceVersion",
+          "newValue": "unused",
+          "propertyName": "hostInterfaceVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:39.580Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "applicationFrameworkBuildNumber",
+          "newValue": 437,
+          "propertyName": "applicationFrameworkBuildNumber"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:39.591Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "applicationFrameworkAPIVersion",
+          "newValue": "10.18.8",
+          "propertyName": "applicationFrameworkAPIVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:39.600Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "sdkVersion",
+          "newValue": "7.18.8",
+          "propertyName": "sdkVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:41.769Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 1,
+          "newValue": 1,
+          "propertyName": "LED Indicator"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:41.828Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 2,
+          "newValue": 1,
+          "propertyName": "Turn On Relay On Alarm"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:41.886Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 3,
+          "newValue": 0,
+          "propertyName": "Auto Turn-Off Timer"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:41.959Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 4,
+          "newValue": 0,
+          "propertyName": "Auto Turn-On Timer"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.022Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 5,
+          "newValue": 2,
+          "propertyName": "State After Power Failure"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.080Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 6,
+          "newValue": 0,
+          "propertyName": "Group 2 (Smoke Alarm): Basic Set Configuration"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.137Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 7,
+          "newValue": 0,
+          "propertyName": "Group 3 (CO Alarm): Basic Set Configuration"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.199Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 8,
+          "newValue": 4,
+          "propertyName": "Enabled Features"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.252Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 9,
+          "newValue": 0,
+          "propertyName": "Relay Report Type"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.529Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Notification",
+          "commandClass": 113,
+          "endpoint": 0,
+          "property": "alarmType",
+          "newValue": 0,
+          "propertyName": "alarmType"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.540Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Notification",
+          "commandClass": 113,
+          "endpoint": 0,
+          "property": "alarmLevel",
+          "newValue": 0,
+          "propertyName": "alarmLevel"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.612Z",
+      "event": "value updated",
+      "args": [
+        {
+          "commandClassName": "Notification",
+          "commandClass": 113,
+          "endpoint": 0,
+          "property": "alarmType",
+          "newValue": 0,
+          "prevValue": 0,
+          "propertyName": "alarmType"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.618Z",
+      "event": "value updated",
+      "args": [
+        {
+          "commandClassName": "Notification",
+          "commandClass": 113,
+          "endpoint": 0,
+          "property": "alarmLevel",
+          "newValue": 0,
+          "prevValue": 0,
+          "propertyName": "alarmLevel"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.746Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Notification",
+          "commandClass": 113,
+          "endpoint": 0,
+          "property": "Smoke Alarm",
+          "propertyKey": "Sensor status",
+          "newValue": 0,
+          "propertyName": "Smoke Alarm",
+          "propertyKeyName": "Sensor status"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.751Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Notification",
+          "commandClass": 113,
+          "endpoint": 0,
+          "property": "CO Alarm",
+          "propertyKey": "Sensor status",
+          "newValue": 0,
+          "propertyName": "CO Alarm",
+          "propertyKeyName": "Sensor status"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.770Z",
+      "event": "interview stage completed",
+      "args": [
+        "CommandClasses"
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.793Z",
+      "event": "interview stage completed",
+      "args": [
+        "OverwriteConfig"
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.817Z",
+      "event": "interview stage completed",
+      "args": [
+        "Complete"
+      ]
+    },
+    {
+      "time": "2026-08-28T19:39:42.952Z",
+      "event": "ready",
+      "args": []
+    },
+    {
+      "time": "2026-08-28T19:39:42.973Z",
+      "event": "interview completed",
+      "args": []
+    },
+    {
+      "time": "2026-08-28T19:53:32.506Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Node Naming and Location",
+          "commandClass": 119,
+          "property": "name",
+          "newValue": "Zooz DC Relay",
+          "propertyName": "name"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:32.508Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Node Naming and Location",
+          "commandClass": 119,
+          "property": "location",
+          "newValue": "Farmhouse Basement",
+          "propertyName": "location"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:32.514Z",
+      "event": "interview started",
+      "args": []
+    },
+    {
+      "time": "2026-08-28T19:53:32.540Z",
+      "event": "interview stage completed",
+      "args": [
+        "ProtocolInfo"
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:32.583Z",
+      "event": "alive",
+      "args": [
+        0
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:32.627Z",
+      "event": "interview stage completed",
+      "args": [
+        "NodeInfo"
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:32.721Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Manufacturer Specific",
+          "commandClass": 114,
+          "endpoint": 0,
+          "property": "productId",
+          "newValue": 272,
+          "propertyName": "productId"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:32.727Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Manufacturer Specific",
+          "commandClass": 114,
+          "endpoint": 0,
+          "property": "productType",
+          "newValue": 4,
+          "propertyName": "productType"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:32.734Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Manufacturer Specific",
+          "commandClass": 114,
+          "endpoint": 0,
+          "property": "manufacturerId",
+          "newValue": 634,
+          "propertyName": "manufacturerId"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:32.830Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "hardwareVersion",
+          "newValue": 1,
+          "propertyName": "hardwareVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:32.834Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "firmwareVersions",
+          "newValue": [
+            "1.50"
+          ],
+          "propertyName": "firmwareVersions"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:32.838Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "protocolVersion",
+          "newValue": "7.18",
+          "propertyName": "protocolVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:32.845Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "libraryType",
+          "newValue": 3,
+          "propertyName": "libraryType"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:33.598Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "applicationBuildNumber",
+          "newValue": 437,
+          "propertyName": "applicationBuildNumber"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:33.606Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "applicationVersion",
+          "newValue": "1.50.0",
+          "propertyName": "applicationVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:33.611Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "zWaveProtocolBuildNumber",
+          "newValue": 437,
+          "propertyName": "zWaveProtocolBuildNumber"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:33.615Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "zWaveProtocolVersion",
+          "newValue": "7.18.8",
+          "propertyName": "zWaveProtocolVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:33.619Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "hostInterfaceBuildNumber",
+          "newValue": 0,
+          "propertyName": "hostInterfaceBuildNumber"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:33.623Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "hostInterfaceVersion",
+          "newValue": "unused",
+          "propertyName": "hostInterfaceVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:33.632Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "applicationFrameworkBuildNumber",
+          "newValue": 437,
+          "propertyName": "applicationFrameworkBuildNumber"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:33.636Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "applicationFrameworkAPIVersion",
+          "newValue": "10.18.8",
+          "propertyName": "applicationFrameworkAPIVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:33.641Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Version",
+          "commandClass": 134,
+          "endpoint": 0,
+          "property": "sdkVersion",
+          "newValue": "7.18.8",
+          "propertyName": "sdkVersion"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:35.718Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 1,
+          "newValue": 1,
+          "propertyName": "LED Indicator"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:35.770Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 2,
+          "newValue": 1,
+          "propertyName": "Turn On Relay On Alarm"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:35.826Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 3,
+          "newValue": 0,
+          "propertyName": "Auto Turn-Off Timer"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:35.888Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 4,
+          "newValue": 0,
+          "propertyName": "Auto Turn-On Timer"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:35.942Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 5,
+          "newValue": 2,
+          "propertyName": "State After Power Failure"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:35.995Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 6,
+          "newValue": 0,
+          "propertyName": "Group 2 (Smoke Alarm): Basic Set Configuration"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:36.050Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 7,
+          "newValue": 0,
+          "propertyName": "Group 3 (CO Alarm): Basic Set Configuration"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:36.105Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 8,
+          "newValue": 4,
+          "propertyName": "Enabled Features"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:36.159Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Configuration",
+          "commandClass": 112,
+          "endpoint": 0,
+          "property": 9,
+          "newValue": 0,
+          "propertyName": "Relay Report Type"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:36.404Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Notification",
+          "commandClass": 113,
+          "endpoint": 0,
+          "property": "alarmType",
+          "newValue": 0,
+          "propertyName": "alarmType"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:36.413Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Notification",
+          "commandClass": 113,
+          "endpoint": 0,
+          "property": "alarmLevel",
+          "newValue": 0,
+          "propertyName": "alarmLevel"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:36.472Z",
+      "event": "value updated",
+      "args": [
+        {
+          "commandClassName": "Notification",
+          "commandClass": 113,
+          "endpoint": 0,
+          "property": "alarmType",
+          "newValue": 0,
+          "prevValue": 0,
+          "propertyName": "alarmType"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:36.478Z",
+      "event": "value updated",
+      "args": [
+        {
+          "commandClassName": "Notification",
+          "commandClass": 113,
+          "endpoint": 0,
+          "property": "alarmLevel",
+          "newValue": 0,
+          "prevValue": 0,
+          "propertyName": "alarmLevel"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:36.595Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Notification",
+          "commandClass": 113,
+          "endpoint": 0,
+          "property": "Smoke Alarm",
+          "propertyKey": "Sensor status",
+          "newValue": 0,
+          "propertyName": "Smoke Alarm",
+          "propertyKeyName": "Sensor status"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:36.600Z",
+      "event": "value added",
+      "args": [
+        {
+          "commandClassName": "Notification",
+          "commandClass": 113,
+          "endpoint": 0,
+          "property": "CO Alarm",
+          "propertyKey": "Sensor status",
+          "newValue": 0,
+          "propertyName": "CO Alarm",
+          "propertyKeyName": "Sensor status"
+        }
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:36.626Z",
+      "event": "interview stage completed",
+      "args": [
+        "CommandClasses"
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:36.649Z",
+      "event": "interview stage completed",
+      "args": [
+        "OverwriteConfig"
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:36.681Z",
+      "event": "interview stage completed",
+      "args": [
+        "Complete"
+      ]
+    },
+    {
+      "time": "2026-08-28T19:53:36.779Z",
+      "event": "ready",
+      "args": []
+    },
+    {
+      "time": "2026-08-28T19:53:36.790Z",
+      "event": "interview completed",
+      "args": []
+    }
+  ],
+  "status": "Alive",
+  "interviewStage": "Complete",
+  "priorityReturnRoute": {},
+  "customReturnRoute": {},
+  "prioritySUCReturnRoute": false,
+  "customSUCReturnRoutes": [],
+  "availableFirmwareUpdates": [],
+  "firmwareUpdatesDismissed": {},
+  "lastFirmwareUpdateCheck": 1788031065407,
+  "appliedTemplateContentHashes": [],
+  "hexId": "0x027a 0x0004-0x0110",
+  "dbLink": "https://devices.zwave-js.io/?jumpTo=0x027a:0x0004:0x0110:1.50.0",
+  "manufacturerId": 634,
+  "productId": 272,
+  "productType": 4,
+  "deviceConfig": {
+    "filename": "/usr/src/app/store/.config-db/devices/0x027a/zen55.json",
+    "isEmbedded": true,
+    "manufacturer": "Zooz",
+    "manufacturerId": 634,
+    "label": "ZEN55 LR",
+    "description": "DC Signal Sensor",
+    "devices": [
+      {
+        "productType": 4,
+        "productId": 272
+      }
+    ],
+    "firmwareVersion": {
+      "min": "0.0",
+      "max": "255.255"
+    },
+    "preferred": false,
+    "paramInformation": {
+      "_map": {}
+    },
+    "metadata": {
+      "inclusion": "Tap up 3 times quickly. The LED indicator will blink green. It will turn green for 2 seconds if inclusion is successful or turn red for 2 seconds if the pairing attempt fails.",
+      "exclusion": "Click the Z-Wave button 3 times quickly. The LED indicator will start blinking green. It will turn green for 2 seconds when exclusion is successful.",
+      "reset": "Click the Z-Wave button twice and hold it for 15 seconds. The LED indicator will flash during the process and turn red for 3 seconds to confirm successful reset.",
+      "manual": "https://cdn.shopify.com/s/files/1/0218/7704/files/zooz-800-lr-dc-signal-sensor-zen55-manual.pdf"
+    }
+  },
+  "productLabel": "ZEN55 LR",
+  "productDescription": "DC Signal Sensor",
+  "manufacturer": "Zooz",
+  "firmwareVersion": "1.50.0",
+  "sdkVersion": "7.18.8",
+  "protocolVersion": 3,
+  "zwavePlusVersion": 2,
+  "zwavePlusNodeType": 0,
+  "zwavePlusRoleType": 5,
+  "nodeType": 1,
+  "endpointsCount": 0,
+  "endpoints": [
+    {
+      "index": 0,
+      "label": "Root Endpoint",
+      "deviceClass": {
+        "basic": 4,
+        "generic": 7,
+        "specific": 1
+      }
+    }
+  ],
+  "isSecure": true,
+  "security": "S2_Authenticated",
+  "supportsSecurity": false,
+  "supportsBeaming": true,
+  "isControllerNode": false,
+  "isListening": true,
+  "isFrequentListening": false,
+  "isRouting": true,
+  "keepAwake": true,
+  "maxDataRate": 100000,
+  "deviceClass": {
+    "basic": 4,
+    "generic": 7,
+    "specific": 1
+  },
+  "lastActive": 1788092232408,
+  "firmwareCapabilities": {
+    "firmwareUpgradable": true,
+    "firmwareTargets": [
+      0
+    ]
+  },
+  "protocol": 0,
+  "deviceId": "634-272-4",
+  "hasDeviceConfigChanged": false,
+  "statistics": {
+    "commandsTX": 154,
+    "commandsRX": 151,
+    "commandsDroppedRX": 0,
+    "commandsDroppedTX": 0,
+    "timeoutResponse": 0,
+    "lastSeen": "2026-08-30T12:17:12.408Z",
+    "rtt": 29.3,
+    "rssi": -79,
+    "lwr": {
+      "protocolDataRate": 3,
+      "repeaters": [],
+      "rssi": -81,
+      "repeaterRSSI": []
+    }
+  },
+  "supportsTime": false,
+  "interviewProgress": 100,
+  "_name": "Zooz DC Relay (Farmhouse Basement)",
+  "applicationRoute": false
+}
